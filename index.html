@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Infographie & Photographie</title>
+
+    <!-- Police Google Fonts : Playfair Display (titres) + Inter (texte) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Notre feuille de styles -->
+    <link rel="stylesheet" href="/style.css" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+
+  <body>
+    <!-- ================= EN-TÊTE / NAVIGATION ================= -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <!-- Logo / Nom du portfolio -->
+        <a href="#accueil" class="nav__logo">Mon<span>Portfolio</span></a>
+
+        <!-- Menu de navigation (liens vers les sections) -->
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#accueil" class="nav__link">Accueil</a></li>
+          <li><a href="#about" class="nav__link">À propos</a></li>
+          <li><a href="#skills" class="nav__link">Compétences</a></li>
+          <li><a href="#gallery" class="nav__link">Galerie</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+
+        <!-- Bouton menu pour mobile (hamburger) -->
+        <button class="nav__toggle" id="nav-toggle" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ================= SECTION ACCUEIL (Hero) ================= -->
+    <section class="hero" id="accueil">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__subtitle" data-animate>Bonjour, je suis</p>
+        <h1 class="hero__title" data-animate>Prince Atikpa</h1>
+        <p class="hero__description" data-animate>
+          Infographe, photographe et apprenant en développement web.
+          Je transforme les idées en visuels élégants et en expériences
+          numériques soignées.
+        </p>
+        <div class="hero__buttons" data-animate>
+          <a href="#gallery" class="btn btn--primary">Voir mes réalisations</a>
+          <a href="#contact" class="btn btn--outline">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION À PROPOS ================= -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <!-- Image de profil (remplaçable par votre photo) -->
+        <div class="about__image" data-animate>
+          <img
+            src="https://images.pexels.com/photos/1265718/pexels-photo-1265718.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="Photographe avec son appareil photo"
+          />
+        </div>
+
+        <!-- Texte de présentation -->
+        <div class="about__text" data-animate>
+          <span class="section__tag">À propos</span>
+          <h2 class="section__title">Créatif passionné par le visuel</h2>
+          <p>
+            Je suis un infographe et photographe passionné, actuellement en
+            apprentissage du développement web. Mon objectif : allier
+            esthétique et fonctionnalité pour donner vie à des projets
+            uniques.
+          </p>
+          <p>
+            De la conception graphique à la prise de vue, en passant par
+            l'intégration web, j'accompagne vos idées avec rigueur et
+            sens du détail.
+          </p>
+          <ul class="about__list">
+            <li>Infographie &amp; identité visuelle</li>
+            <li>Photographie portrait &amp; paysage</li>
+            <li>Intégration HTML &amp; CSS</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION COMPÉTENCES ================= -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__tag">Mes compétences</span>
+          <h2 class="section__title">Ce que je sais faire</h2>
+        </div>
+
+        <!-- Cartes de compétences -->
+        <div class="skills__grid">
+          <article class="skill-card" data-animate>
+            <div class="skill-card__icon">🎨</div>
+            <h3>Infographie</h3>
+            <p>Logos, affiches, supports de communication et identité visuelle complète.</p>
+          </article>
+
+          <article class="skill-card" data-animate>
+            <div class="skill-card__icon">📷</div>
+            <h3>Photographie</h3>
+            <p>Portraits, paysages et retouche photo pour sublimer vos souvenirs et projets.</p>
+          </article>
+
+          <article class="skill-card" data-animate>
+            <div class="skill-card__icon">&lt;/&gt;</div>
+            <h3>HTML</h3>
+            <p>Structure sémantique et accessible de pages web modernes et propres.</p>
+          </article>
+
+          <article class="skill-card" data-animate>
+            <div class="skill-card__icon">#</div>
+            <h3>CSS</h3>
+            <p>Mise en page responsive, animations et design élégant sur tous les écrans.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION GALERIE ================= -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__tag">Galerie</span>
+          <h2 class="section__title">Mes réalisations</h2>
+        </div>
+
+        <!-- Galerie de vos réalisations locales -->
+        <div class="gallery__grid">
+          <figure class="gallery__item" data-animate>
+            <img src="/imag.html-6.jpeg" alt="Portrait féminin réalisé pour une séance photo" />
+            <figcaption>Portrait — Photographie</figcaption>
+          </figure>
+
+          <figure class="gallery__item" data-animate>
+            <img src="/imag.html4.jpeg" alt="Affiche promotionnelle Déo-Grâcias" />
+            <figcaption>Affiche — Communication visuelle</figcaption>
+          </figure>
+
+          <figure class="gallery__item" data-animate>
+            <img src="/imag.html3.jpeg" alt="Portrait professionnel dans un bureau" />
+            <figcaption>Portrait — Image professionnelle</figcaption>
+          </figure>
+
+          <figure class="gallery__item" data-animate>
+            <img src="/imag.html1.jpeg" alt="Carte anniversaire personnalisée" />
+            <figcaption>Création — Carte événementielle</figcaption>
+          </figure>
+
+          <figure class="gallery__item" data-animate>
+            <img src="/bache_tresse_soeur.jpg" alt="Affiche promotionnelle de coiffure et tresses" />
+            <figcaption>Affiche — Coiffure &amp; tresses</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION SERVICES ================= -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__tag">Mes services</span>
+          <h2 class="section__title">Comment je peux vous aider</h2>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card" data-animate>
+            <h3>Design graphique</h3>
+            <p>Création de logos, affiches, flyers et identités visuelles pour votre marque.</p>
+          </article>
+
+          <article class="service-card" data-animate>
+            <h3>Séance photo</h3>
+            <p>Photographie portrait, événementielle et paysage avec retouche professionnelle.</p>
+          </article>
+
+          <article class="service-card" data-animate>
+            <h3>Site web vitrine</h3>
+            <p>Conception et intégration de sites web responsive en HTML &amp; CSS.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner" data-animate>
+        <span class="section__tag">Contact</span>
+        <h2 class="section__title">Travaillons ensemble</h2>
+        <p>Une idée, un projet ? Discutons-en directement sur WhatsApp.</p>
+        <!-- Remplacez le numéro ci-dessous par le vôtre (format international sans +) -->
+        <a
+          href="https://wa.me/22891516122"
+          class="btn btn--whatsapp"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="whatsapp-icon">💬</span>
+          Me contacter sur WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= PIED DE PAGE ================= -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a href="#accueil" class="nav__logo">Mon<span>Portfolio</span></a>
+          <p>Infographie · Photographie · Développement web</p>
+        </div>
+
+        <div class="footer__links">
+          <h4>Navigation</h4>
+          <a href="#about">À propos</a>
+          <a href="#skills">Compétences</a>
+          <a href="#gallery">Galerie</a>
+          <a href="#services">Services</a>
+        </div>
+
+        <div class="footer__social">
+          <h4>Suivez-moi</h4>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">Behance</a>
+          <a href="https://wa.me/22891516122" target="_blank" rel="noopener">WhatsApp : +228 91516122</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="year"></span> Votre Nom — Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Notre script JavaScript -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
